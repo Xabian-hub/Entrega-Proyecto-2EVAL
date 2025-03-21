@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi App de AniList</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white p-6">
+
+    <h1 class="text-3xl font-bold mb-4 text-center">Bienvenido a la App de AniList</h1>
+
+    <div class="flex justify-center gap-4 mb-6">
+        <button id="showUserSearch" class="bg-blue-500 px-4 py-2 rounded">Buscar Usuario</button>
+        <button id="showAnimeSearch" class="bg-green-500 px-4 py-2 rounded">Buscar Anime</button>
+    </div>
+
+    <div id="userSearch" class="hidden">
+        <input id="usernameInput" type="text" placeholder="Ingrese su usuario" class="p-2 text-black">
+        <button id="searchUser" class="bg-blue-500 px-4 py-2 rounded">Buscar</button>
+        <div id="userResult" class="mt-4"></div>
+    </div>
+
+    <div id="animeSearch" class="hidden">
+        <input id="animeInput" type="text" placeholder="Ingrese el nombre del anime" class="p-2 text-black">
+        <button id="searchAnime" class="bg-green-500 px-4 py-2 rounded">Buscar</button>
+        <div id="animeResult" class="mt-4"></div>
+    </div>
+
+    <script src="../src/renderer.js"></script>
+
+</body>
+</html>
